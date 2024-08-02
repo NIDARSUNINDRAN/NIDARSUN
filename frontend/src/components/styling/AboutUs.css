@@ -1,0 +1,20 @@
+.about-us-container {
+    padding: 20px;
+    background-color: transparent;
+}
+
+.about-us-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-us-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+}

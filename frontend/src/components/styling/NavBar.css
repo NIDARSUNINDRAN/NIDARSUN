@@ -1,0 +1,56 @@
+/* NavBar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0; /* Make sure the navbar is aligned to the left */
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding to give more space */
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0; /* Ensure no extra margin around the ul */
+    padding: 0; /* Ensure no extra padding around the ul */
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon {
+    margin-right: 5px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-button {
+    padding: 5px;
+    background-color: #555;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
