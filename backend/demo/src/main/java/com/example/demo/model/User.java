@@ -1,26 +1,21 @@
 package com.example.demo.model;
 
-import java.util.List;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Column;
 
 @Entity
 public class User {
+
     @Id
     private int id;
-    private int userId;
     private String email;
-    private String name;
+    private String password; // Ensure this field is present
 
-    public User() {
-    }
+    @Column(name = "roles") // Ensure this field is present
+    private String roles;
 
-    public User(int userId, String email, String name) {
-        this.userId = userId;
-        this.email = email;
-        this.name = name;
-    }
+    // Getters and setters for all fields
 
     public int getId() {
         return id;
@@ -28,14 +23,6 @@ public class User {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
     }
 
     public String getEmail() {
@@ -46,11 +33,19 @@ public class User {
         this.email = email;
     }
 
-    public String getName() {
-        return name;
+    public String getPassword() {
+        return password;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getRoles() {
+        return roles;
+    }
+
+    public void setRoles(String roles) {
+        this.roles = roles;
     }
 }
